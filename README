@@ -1,0 +1,29 @@
+AUTHOR & DATE:
+  hartog/20090527
+
+
+SYNOPSIS:
+  youtube-watch ($id|$url)
+
+
+DESCRIPTION:
+  simple extension to youtube-dl
+
+  feed with url or just the id of the youtube video (which is in the
+  v parameter) and it will download and play the vid.
+
+
+PREREQ's:
+  - youtube-dl
+  - mplayer
+
+  Ubuntu users do 'sudo apt-get install youtube-dl mplayer'
+
+
+LICENSE:
+  GPL or the alike. This is free software (think speech, not beer)
+
+
+GREETS & REGARDS:
+
+  Greets Buurman, Gertmans, Eelkonio, Arnofr & Robert

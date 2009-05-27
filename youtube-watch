@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# extract youtube id
+id=`perl -le '$a  = shift;
+             ($b) = ( index($a, "http://") > -1
+                      ? $a =~ /\?v=([^\&\;]+)/
+                      : $a
+                    );
+              print $b' $1`;
+
+
+# figure out name of the flashvideo file (id + .flv)
+flv="$id"".flv"
+
+
+# download
+/usr/bin/youtube-dl $id
+
+
+# play
+/usr/bin/mplayer $flv
+
+
+# remove
+rm $flv
