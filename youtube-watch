@@ -21,5 +21,11 @@ flv="$id"".flv"
 /usr/bin/mplayer $flv
 
 
-# remove
-rm $flv
+# remove?
+rm=".$2";
+if [ $rm = "." ]
+then
+	rm $flv
+else
+	echo "Not removing $flv"
+fi
