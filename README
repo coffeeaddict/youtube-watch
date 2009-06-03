@@ -1,9 +1,10 @@
 AUTHOR & DATE:
-  hartog/20090527
+  hartog/20090527 - Initial version
+  hartog/20090603 - Added no delete version
 
 
 SYNOPSIS:
-  youtube-watch ($id|$url)
+  youtube-watch ($id|$url) [1]
 
 
 DESCRIPTION:
@@ -11,6 +12,9 @@ DESCRIPTION:
 
   feed with url or just the id of the youtube video (which is in the
   v parameter) and it will download and play the vid.
+
+  If you specify another option on the command line, regardless of its value
+  the downloaded file will not be deleted 
 
 
 PREREQ's:
